@@ -1,0 +1,108 @@
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    gap: 2px;
+    margin-bottom: 0.25%;
+}
+
+body {
+    background: linear-gradient( -220deg, #ff00c8, #00aeff );
+    transition: all 0.1s ease-out;
+}
+
+h1{
+    margin-top: 5%;
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-of-app {
+    flex-basis: 30%;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.box{
+    // margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    background-color: yellow;
+    box-shadow: 2px 2px 2px rgb(29, 29, 29);
+    width: 220px;
+    animation: floatingCard ease-in-out 6s infinite;
+}
+
+.innerBox {
+    border: 1px solid black;
+    margin: 5%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.imageBorder {
+    border: 1px solid black;
+    margin: 9% 5%;
+    box-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+.poke-info {
+    margin: 7% 0;
+}
+
+img {
+    width: 168px;
+    height: 168px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes floatingCard {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(5%);
+    }
+    
+    100% {
+        transform: translateY(0%);
+      }
+}
